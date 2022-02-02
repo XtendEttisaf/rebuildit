@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SignUp Page</title>
+
+	<style type="text/css">
+		
+*{
+	font-family: 'AudioWide', sans-serif;
+	background-repeat: 1;
+}
+
+.form{
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+}
+.heading h1{
+	color: white;
+	text-align: center;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	border-bottom: 5px solid aqua;
+	margin-bottom: 30px;
+	width: 50%;
+	transition: 0.5s ease-out;
+	animation: heading 3s alternate infinite;
+
+}
+@keyframes heading{
+	25%{
+		transform: rotate3d(360, 0, 0, 360deg);
+	}
+	50%{
+		transform: rotate(-2deg);
+	}
+	100%{
+		transform: rotate(3deg);
+	}
+}
+.heading h1:hover{
+	color: white;
+	font-size: 37px;
+	text-align: center;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	border-bottom: 5px solid aqua;
+	margin-bottom: 30px;
+	width: 50%;
+	animation: heading 3s alternate infinite;
+}
+
+.labels label{
+	color: white;
+	font-size: 20px;
+
+	}
+.labels label:hover{
+	color: deeppink;
+	font-size: 21px;
+
+}
+.labels button{
+	padding: 10px;
+	color: white;
+	background-color: black;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	transition: 1s ease-in;
+
+
+}
+.labels button:hover{
+	padding: 10px;
+	color: black;
+	background-color: white;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	transition: 1s ease-out;
+}
+.labels input{
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 10px;
+	background: none;
+	border-bottom: 5px solid aqua;
+	color: white;
+	font-size: 17px;
+	text-align: center;
+}
+
+.labels input:hover{
+	border: none;
+	outline: none;
+	padding: 5px;
+	background: none;
+	border-bottom: 7px solid deeppink;
+
+}
+.form img{
+	border-radius: 1000px;
+	width: 80px;
+	height: 80px;
+}
+
+
+
+	</style>
+
+
+</head>
+<body background="bg.png">
+	<form action="https://docs.google.com/spreadsheets/d/1bVFOWBh17XCNtC16QBMQDMQsoo7ZR6VcxzdUjcarU18" method="POST">
+		<div class="form">
+		<div class="heading">
+			<center> <img src="login.png"> </center>
+		<center><h1> Sign Up With Us</h1></center>
+		</div>
+<div class="labels">
+	<center>
+<label> Your UserName </label>
+<br>
+	<input type="text" name="data[name]">
+	<br><br>
+	<label> Your Email Address </label>
+	<br>
+	<input type="email" name="data[email]">
+	<br><br>
+	<label> Your Password </label>
+	<br>
+	<input type="password" name="data[password]">
+
+	<br><br>
+<a href="signup.html">
+	<button> Registration Now </button>
+	</a>
+</center>
+</div>
+
+
+
+
+</div>
+	</form>
+
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      swal("Registration Done!", "Your Registration has been registered", "success");
+    });
+  });
+</script>
+
+</body>
+</html>
