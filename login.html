@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style media="screen">
+  body{
+     margin: 0;
+    padding: 0;
+    font-family: 'AudioWide', sans-serif;
+    background-image: url(download.jpg);
+    background-size: cover;
+
+  }
+  .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .box h2{
+    margin: 0 0 30px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    margin-bottom:4px ;
+    border-bottom: 5px solid red;
+    text-align: center;
+    width: 30%;
+    transition: ease-out 1s;
+    cursor: pointer;
+  }
+
+   .box h2:hover{
+    margin: 0 0 30px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    margin-bottom:4px ;
+    border-bottom: 5px solid yellow;
+    width: 100%;
+
+  }
+  .box .input-box{
+    position: relative;
+  }
+  .box .input-box input{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid aqua;
+    border-radius: 5px;
+  }
+  .box .input-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+  }
+  .box .input-box input:focus ~ label,
+  .box .input-box input:valid ~ label{
+    top: -18px;
+    left: 0px;
+    color: #03a9f4;
+    font-size: 12px;
+  }
+  .box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #227be3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  .box input[type="submit"]:hover{
+    background-color: #3067b9;
+  }
+
+  .box button{
+    padding: 7px;
+    border-radius: 10px;
+    transition: ease-out 0.09s;
+    color: black;
+    font-family: "Audiowide", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: red;
+    box-shadow: rgba(255,0,0, 1.0);
+    outline: none;
+  }
+
+  .box button:hover{
+    padding: 7px;
+    box-shadow: rgba(255,255,0, 1.0);
+    background: rgba(255,255,0, 1.0);
+    direction: row;
+    outline: none;
+
+  }
+  .navbar ul{
+    text-align: center;
+    width: 400px;
+    cursor: pointer;
+  }
+    .navbar li{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    outline: none;
+    border: none;
+  }
+    .navbar li:hover{
+    background-color: rgba(255, 0, 0, 1.0);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+
+  </style>
+  <title>XtendShop : Login</title>
+</head>
+<body>
+        
+        <nav class="navbar">
+  <ul>
+
+<li><a href="index.html"><font color="white"><<- Go Back to the First Page</font></a></li>
+
+
+</ul>
+</nav>
+
+    <form>
+  <div>
+
+  <div class="box">
+    <center>
+    <h2>Login</h2></center>
+    <form>
+       <center>
+<br><br>
+  </center> 
+  <br>
+      <div class="input-box">
+        <input type="text" name="username" autocomplete="off" required placeholder="UserName">
+        
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" autocomplete="off" required placeholder="Email Address">
+        
+      </div>
+      <div class="input-box" align="left">
+          <br>
+          <br>
+        <select>
+          <option>+880</option>
+          <option>+91</option>
+          <option>+92</option>
+        </select>
+        </center>
+        <input type="number" name="email" autocomplete="off" required placeholder="Phone Number">
+        
+        
+        <center>
+          <button formaction="Choiceit.html">Login on XtendShop</button></center>
+        </div>
+
+      </form>
+      
+    </div>
+        
+</body>
+</html>
