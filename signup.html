@@ -30,7 +30,7 @@
 }
 @keyframes heading{
 	25%{
-		transform: rotate3d(360, 0, 0, 360deg);
+		transform: rotate3d(180, 0, 0, 360deg);
 	}
 	50%{
 		transform: rotate(-2deg);
@@ -40,7 +40,7 @@
 	}
 }
 .heading h1:hover{
-	color: white;
+	color: blue;
 	font-size: 37px;
 	text-align: center;
 	letter-spacing: 7px;
@@ -48,7 +48,7 @@
 	border-bottom: 5px solid aqua;
 	margin-bottom: 30px;
 	width: 50%;
-	animation: heading 3s alternate infinite;
+	animation: heading 2s alternate infinite;
 }
 
 .labels label{
@@ -114,8 +114,8 @@
 
 </head>
 <body background="bg.png">
-	<form action="https://docs.google.com/spreadsheets/d/1bVFOWBh17XCNtC16QBMQDMQsoo7ZR6VcxzdUjcarU18" method="POST">
-		<div class="form">
+					<form action="" method="POST" id="sheetdb-form">
+			<div class="form">
 		<div class="heading">
 			<center> <img src="login.png"> </center>
 		<center><h1> Sign Up With Us</h1></center>
@@ -124,15 +124,19 @@
 	<center>
 <label> Your UserName </label>
 <br>
-	<input type="text" name="data[name]">
+	<input type="text" name="data[name]" required>
 	<br><br>
 	<label> Your Email Address </label>
 	<br>
-	<input type="email" name="data[email]">
+	<input type="email" name="data[email]" required>
 	<br><br>
 	<label> Your Password </label>
 	<br>
-	<input type="password" name="data[password]">
+	<input type="password" name="data[password]" id="pass" required>
+	<br><br>
+		<label> Retype Password </label>
+	<br>
+	<input type="password" name="data[repassword]" id="repass" required>
 
 	<br><br>
 <a href="signup.html">
@@ -142,11 +146,13 @@
 </div>
 
 
-
-
 </div>
 	</form>
 
+
+<div class="ads" style="color: white; size: 20px;">
+		<font> @ all the webpages are created by ettisaf under xtend</font>
+</div>
 <script>
   var form = document.getElementById('sheetdb-form');
   form.addEventListener("submit", e => {
