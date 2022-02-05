@@ -120,7 +120,7 @@
 </head>
 <body background="download.jpg">
 	<center>
-					<form action="" method="POST" id="sheetdb-form">
+					<form action="https://sheetdb.io/api/v1/pcn4t7nwoya96" method="POST" id="sheetdb-form">
 			<div class="form">
 		<div class="heading">
 			<center> <img src="login.png"> </center>
@@ -142,12 +142,10 @@
 	<br><br>
 		<label> Retype Password </label>
 	<br>
-	<input type="password" name="data[repassword]" id="repass" required>
+	<input type="password" name="data[retype]" id="repass" required>
 
 	<br><br>
-<a href="signup.html">
-	<button> Registration Now </button>
-	</a>
+	<button type="submit"> Registration Now </button>
 </center>
 </div>
 
@@ -160,8 +158,9 @@
 <div class="ads" style="color: white; size: 20px;">
 		<font> @ all the webpages are created by ettisaf under xtend</font>
 </div>
-<script>
-  var form = document.getElementById('sheetdb-form');
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+	  var form = document.getElementById('sheetdb-form');
   form.addEventListener("submit", e => {
     e.preventDefault();
     fetch(form.action, {
