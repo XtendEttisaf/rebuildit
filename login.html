@@ -102,15 +102,15 @@
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    background-color: red;
-    box-shadow: rgba(255,0,0, 1.0);
+    background-color:aqua;
+    box-shadow: rgb(3, 196, 255);
     outline: none;
   }
 
   .box button:hover{
     padding: 7px;
     box-shadow: rgba(255,255,0, 1.0);
-    background: rgba(255,255,0, 1.0);
+    background: rgb(255, 0, 212);
     direction: row;
     outline: none;
 
@@ -121,19 +121,30 @@
     cursor: pointer;
   }
     .navbar li{
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     width: 400px;
     outline: none;
     border: none;
+    z-index: 1;
+    transition: 1s ease-in;
   }
     .navbar li:hover{
-    background-color: rgba(255, 0, 0, 1.0);
+    background: linear-gradient(90deg, aqua, red, deeppink, yellow);
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    transition: 1s ease-in-out;
+    animation: hoving 0.5s linear infinite;
+    filter: blur(0.5px);
+    z-index: -1;
+  }
+  @keyframes hoving {
+    0%{
+      background-position: 200%;
+    }
+    
   }
   
 
@@ -172,18 +183,12 @@
       </div>
       <div class="input-box" align="left">
           <br>
-          <br>
-        <select>
-          <option>+880</option>
-          <option>+91</option>
-          <option>+92</option>
-        </select>
         </center>
-        <input type="number" name="email" autocomplete="off" required placeholder="Phone Number">
+        <input type="password" name="password" autocomplete="off" required placeholder="Password">
         
         
         <center>
-          <button formaction="Choiceit.html">Login on XtendShop</button></center>
+          <button formaction="home.html">Login on XtendShop</button></center>
         </div>
 
       </form>

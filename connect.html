@@ -103,16 +103,14 @@
 
 <label> Connect With Us! </label>
 
-<a href="https://www.facebook.com/webxtendarena/">
 <div class="firstbutton">  
-    <button><img src="fb.png"><br>Join with Facebook</button>
+    <button onclick="fstBtn()"><img src="fb.png"><br>Join with Facebook</button>
   
 </div>
 </a>
 
-<a href="https://discord.gg/Z3wtsHKF5y">
 <div class="secondbutton" onclick="discordButton">
-  <button><img src="dc.png"><br>Join our Discord</button> 
+  <button onclick="secBtn()"><img src="dc.png"><br>Join our Discord</button> 
    </div>
 
  </a>
@@ -122,5 +120,15 @@
 </form>
 </center>
 
+
+<script>
+
+  function fstBtn() {
+    open("https://www.facebook.com/webxtendarena/")
+  }
+  function secBtn() {
+    open("https://discord.gg/Z3wtsHKF5y")
+  }
+</script>
 </body>
 </html>
