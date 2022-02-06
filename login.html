@@ -140,28 +140,58 @@
     filter: blur(0.5px);
     z-index: -1;
   }
+
   @keyframes hoving {
     0%{
       background-position: 200%;
     }
-    
+
   }
-  
+    .box .input-box label{
+    text-align: center;
+    font-size: 17px;
+    margin-left: 70px;
+    color: white;
+    border-bottom: 3px solid deeppink;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+   .navibar ul{
+    display: flex;
+   }
+   .navibar img:hover{
+    border: 2px solid aqua;
+    height: 100px;
+    width: 100px;
+    animation: rot 2s 1;
+    
+   }
+   @keyframes rot {
+     0%{
+      transform: rotate(0deg);
+      transition: 1s ease-in;
+     }
+     100%{
+       transform: rotate3d(360, 360, 360, 360deg);
+     }
+   }
 
   </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> 
   <title>XtendShop : Login</title>
 </head>
 <body>
-        
+        <div class="navibar">
         <nav class="navbar">
-  <ul>
-
-<li><a href="index.html"><font color="white"><<- Go Back to the First Page</font></a></li>
-
+   <ul class="upline">
+    <a href="index.html">
+    <img src="logo.png" style="height: 80px; width: 80px; border-radius: 100px; margin-left: 20px;">
+  </a>
 
 </ul>
-</nav>
 
+</nav>
+</div>
     <form>
   <div>
 
@@ -174,15 +204,20 @@
   </center> 
   <br>
       <div class="input-box">
+        <label>Your UserName </label>
+        <br><br><br>
         <input type="text" name="username" autocomplete="off" required placeholder="UserName">
-        
       </div>
+
       <div class="input-box">
+        <label>Your Email Address</label>
+        <br><br><br>
         <input type="email" name="email" autocomplete="off" required placeholder="Email Address">
-        
       </div>
+
       <div class="input-box" align="left">
-          <br>
+        <label>Your Password </label>
+        <br><br><br>
         </center>
         <input type="password" name="password" autocomplete="off" required placeholder="Password">
         

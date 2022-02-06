@@ -120,6 +120,12 @@
 		color: rgba(255, 0, 48, 1.0);
 		cursor: pointer;
 	}
+	.intro span:hover{
+		transition: 0.1s linear;
+		font-size: 16px;
+		color: aqua;
+		cursor: pointer;
+	}
 	.homebutton button{
 		width: 300px;
 		padding: 30px;
@@ -177,14 +183,23 @@
 			transform: rotate3d(260, 0, 0, 400deg);
 		}
 		50%{
-			transform: rotate(-10deg);
+			transform: rotate(-2deg);
 		}
 		100%{
-			transform: rotate(10deg);
+			transform: rotate(3deg);
 		}
 	}
 
+ 	@media only screen and (mix-width: 1140px) {
+	  
+		.navigation {
+			flex-direction: column;
+			width: 100%;
+		}
 
+	 
+	 }
+     
 
 </style>
 
@@ -199,11 +214,11 @@
 		<nav class="navbar navbar-expand-sm">
 
 	<a href="index.html" class="navbar-brand">
-		<img src="index.png" height="100px" width="120px">
+		<img src="logo.png" height="80px" width="80px" style="border-radius: 50px; margin-left: 20px;">
 	</a>
 
 		<ul class="nav m-auto">
-			<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
 			<li class="nav-item"><a href="connect.html" class="nav-link">Connect with us</a></li>
 			<li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
 			<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
@@ -238,14 +253,19 @@
 
 
 <br><br>
-			° Sign Up 
+			<span>>>°<<</span> Sign Up 
 <br>
-			° Login
+			<span>>>°<<</span> Login
 <br>
-			° Get Started!
+			<span>>>°<<</span> Get Started!
 <br>
+
+</p>
+
+<span>
+			--> You can get any type of help in this website. You can get pluggins of IDE Softwares. You can get even well-designed IDE's from here for free! Just sign up and Join with us!
 		</font>
-	</p>
+	</span>
 </div>
 
 
@@ -255,7 +275,7 @@
 
 <center>
 			<div class="homebutton">
-		<a href="signup.html">
+		<a href="signup.html" id="home">
 				<button> Sign Up Now </button>
 		</a>
 			</div>
