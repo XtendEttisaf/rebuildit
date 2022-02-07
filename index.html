@@ -19,15 +19,16 @@
 		text-transform: uppercase;
 	}
 .exp ul{
+	margin-top: 130px;
 	position: top;
 	letter-spacing: 2px;
 	font-family: "Audiowide", sans-serif;
 	padding: 50px;
 	background: rgba(0, 0, 0, 0.7);
 	list-style-type: none;
-}
+	
  /*The Buttons are Decorating Here*/
-
+}
 .html li{
 	background-color: rgba(255, 0, 0);
 	padding: 15px;
@@ -128,8 +129,8 @@
 	}
 	.homebutton button{
 		width: 300px;
-		padding: 30px;
-		font-size: 30px;
+		padding: 20px;
+		font-size: 26px;
 		border-radius: 10px;
 		outline: none;
 		border: none;
@@ -138,6 +139,8 @@
 		transition: 0.5s ease-in ;
 		box-shadow: inset 0 0 0 0 yellow;
 		cursor: pointer;
+		transition: 2sec ease-out;
+
 	}
 
 	.homebutton button:hover{
@@ -148,7 +151,7 @@
 		outline: none;
 		background-color: white;
 		color: black;
-		transition: 0.1s ease linear ;
+		transition: 0.1s ease-in-out linear ;
 	}
 	.navigation{
 		font-size: 20px;
@@ -164,7 +167,7 @@
 	
 	}
 	.navigation img:hover{
-		padding: 2px;
+		padding: 5px;
 		background-color: rgba(255, 0, 0, 0.7);
 		letter-spacing: 3px;
 	}
@@ -193,13 +196,99 @@
  	@media only screen and (mix-width: 1140px) {
 	  
 		.navigation {
-			flex-direction: column;
+			flex-direction: row;
 			width: 100%;
 		}
 
 	 
 	 }
-     
+	 .connect{
+		 background-color: rgba(0, 0, 0, 0.7);
+		 background-image: url(cnt.png);
+		 background-repeat: no-repeat;
+		 background-size: cover;
+		 width: 100%;
+		 
+	 }
+.connect label{
+  border-bottom: 7px solid deeppink;
+  transition: 0.5s ease-in;
+  border-bottom-width: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 7px;
+
+ }
+.connect label:hover{
+  border-bottom: 9px solid #2D39D1FF;
+  transition: 0.25s ease-out;
+  border-bottom-width: 100%;
+  letter-spacing: 2px;
+  
+}
+.firstbutton button{
+  width: 40%;
+  padding: 15px;
+  background-color: #4267B2;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 0.5s ease-in;
+
+}
+.secondbutton button{
+  width: 40%;
+  padding: 10px;
+  background-color: #FB0337FF;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 0.5s ease-in;
+
+}
+
+.firstbutton button:hover{
+  color: white;
+  background-color: #2D39D1FF;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  transition: 1s ease-out;
+}
+.secondbutton button:hover{
+  padding: 10px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  transition: 1s ease-out;
+}
+.firstbutton img{
+  border-radius: 500px;
+  height: 50%;
+  width: 10%;
+  }
+.secondbutton img{
+  border-radius: 500px;
+  height: 50%;
+  width: 20%;
+
+}
+.colorborder{
+	background-color: rgba(255, 0, 0, 0.7);
+	height: 50px;
+}
+.navigation nav{
+	padding: 1px;
+}
 
 </style>
 
@@ -211,15 +300,15 @@
 
 <div class="navigation">
 
-		<nav class="navbar navbar-expand-sm">
+		<nav class="navbar navbar-expand-sm fixed-top bg-warning">
 
 	<a href="index.html" class="navbar-brand">
 		<img src="logo.png" height="80px" width="80px" style="border-radius: 50px; margin-left: 20px;">
 	</a>
 
 		<ul class="nav m-auto">
-			<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="connect.html" class="nav-link">Connect with us</a></li>
+			<li class="nav-item"><a href="#homepage" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="#connect" class="nav-link">Connect with us</a></li>
 			<li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
 			<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
 		</ul>
@@ -228,7 +317,7 @@
 </div>
 
 <center>
-<div class="exp">
+<div class="exp" id="homepage">
 	<ul>
 		<h3>Let's Rebuild the Experience</h3>
 		<div class="html"><li> HTML </li></div>
@@ -244,7 +333,10 @@
 <div class="intro">
 	<center>
 			<label> >> What We Do Here?</label>
-			<p> This web is created mostly for new coders who wants to improve their knowledge and skills.</p>
+			<p> This web is created mostly for new coders who wants to improve their knowledge and skills.
+<br>
+				Get A lot of works with HTML,CSS & JavaScript with Source Code on RebuildIt!
+			</p>
 
 			<font color="white"> >> If you are one of them, you can sign up with us and get chance to improve your skills. << 
 
@@ -272,17 +364,52 @@
 		
 		</center>
 		</div>
-
+<br><br>
 <center>
 			<div class="homebutton">
 		<a href="signup.html" id="home">
 				<button> Sign Up Now </button>
 		</a>
+		<br><br>
 			</div>
 </center>
 
+<div class="colorborder"></div>
+
+<br>
+<center>
+
+	<form class="bg">
+	
+	<div class="connect" id="connect">
+	<br><br>
+	<label> Connect With Us! </label>
+	<br><br><br>
+	<div class="firstbutton">  
+		<button onclick="fstBtn()"><img src="fb.png"><br>Join with Facebook</button>
+	  
+	</div>
+	</a>
+	<p></p>
+	<div class="secondbutton" onclick="discordButton">
+	  <button onclick="secBtn()"><img src="dc.png"><br>Join our Discord</button> 
+	   </div>
+	
+	 </a>
+	
+	
+	</div>
+	</form>
+	</center>
+	
 <script type="text/javascript">
 	
+	function fstBtn() {
+ 		open("https://www.facebook.com/webxtendarena/")
+	}
+	function secBtn() {
+  		open("https://discord.gg/Z3wtsHKF5y")
+	}
 </script>
 
 
