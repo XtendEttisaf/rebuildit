@@ -90,6 +90,7 @@
 		background-color: rgba(0, 0, 0, 0.9);
 		text-align: center;
 		border-radius: 20px;
+		
 
 	}
 	.intro label:hover{
@@ -121,12 +122,33 @@
 		color: rgba(255, 0, 48, 1.0);
 		cursor: pointer;
 	}
-	.intro span:hover{
+	.spandiv span:hover{
 		transition: 0.1s linear;
 		font-size: 16px;
 		color: aqua;
 		cursor: pointer;
 	}
+	.intro img{
+		animation: border 2s alternate-reverse infinite;
+		transform-style: ease-in;
+	}
+	@keyframes border{
+	0%{
+		border: 3px solid red;
+	}
+	25%{
+		border: 3px solid aqua;
+	}
+	50%{
+		border: 3px solid deeppink;
+	}
+	75%{
+		border: 3px solid green;
+	}
+	100%{
+		border: 3px solid blueviolet;
+	}
+}
 	.homebutton button{
 		width: 300px;
 		padding: 20px;
@@ -145,8 +167,8 @@
 
 	.homebutton button:hover{
 		transform: rotateX(360deg);
-		padding: 30px;
-		font-size: 30px;
+		padding: 20px;
+		font-size: 25px;
 		border-radius: 10px;
 		outline: none;
 		background-color: white;
@@ -154,17 +176,11 @@
 		transition: 0.1s ease-in-out linear ;
 	}
 	.navigation{
-		font-size: 20px;
+		font-size: 17px;
 		color: white;
 		background-color: rgba(0, 0, 0, 0.7);
 		letter-spacing: 2px;
 		text-align: right;
-	}
-	.navigation:hover{
-		color: white;
-		background-color: rgba(0, 0, 0, 0.7);
-		letter-spacing: 2px;
-	
 	}
 	.navigation img:hover{
 		padding: 5px;
@@ -199,7 +215,6 @@
 			flex-direction: row;
 			width: 100%;
 		}
-
 	 
 	 }
 	 .connect{
@@ -220,6 +235,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px;
   border-radius: 7px;
+  margin-left: 70px;
 
  }
 .connect label:hover{
@@ -238,6 +254,7 @@
   border: none;
   outline: none;
   transition: 0.5s ease-in;
+  margin-left: 30px;
 
 }
 .secondbutton button{
@@ -249,6 +266,7 @@
   border: none;
   outline: none;
   transition: 0.5s ease-in;
+  margin-left: 30px;
 
 }
 
@@ -283,16 +301,152 @@
 
 }
 .colorborder{
-	background-color: rgba(255, 0, 0, 0.7);
+	background-image: url(colorborder.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 50px;
+	animation: cborder 1s alternate infinite;
+}
+@keyframes cborder {
+	
+	0%{
+		border: 5px solid red;
+	}
+	25%{
+		border: 5px solid aqua;
+	}
+	50%{
+		border: 5px solid deeppink;
+	}
+	75%{
+		border: 5px solid green;
+	}
+	100%{
+		border: 5px solid blueviolet;
+	}
+	
+}
+
+.colorborder:hover{
+	background-color: rgba(44, 39, 39, 0.7);
 	height: 50px;
 }
 .navigation nav{
 	padding: 1px;
 }
+.contact{
+	background-image: url(bg.png);
+	background-repeat: none;
+	background-size: cover;
+	text-align: right;
+	display: inline-flexbox;
+	backdrop-filter: blur;
+	
+}
+#top{
+	margin-right: 70%;
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+	border-bottom: 3px solid deeppink;
+	border-right: 3px solid deeppink;
+	background: rgba(0, 0, 0, 0.5);
+	transition: 3s ease-in;
+
+}
+#top:hover{
+	margin-right: 20%;
+	color: white;
+	padding: 12px;
+	border-radius: 10px;
+	border-bottom: 3px solid deeppink;
+	background: rgba(0, 0, 0, 0.5);
+	transition: 3s ease-out;
+	animation: contactus 0.5s alternate infinite;
+}
+@keyframes contactus {
+	25%{
+		border-bottom: 5px solid aqua;
+		border-right: 5px solid deeppink;
+	}
+	50%{
+		border-bottom: 5px solid deeppink;
+		border-right: 5px solid aqua;
+	}
+	100%{
+		border-bottom: 5px solid rgb(30, 184, 184);
+		border-right: 5px solid rgb(187, 38, 179);
+
+	}
+	
+}
+.contact label{
+	margin-right: 80px;
+	color: rgba(231, 245, 250, 0.911);
+	font-size: 26px;
+	background: rgba(3, 219, 190, 0.911);
+	padding: 5px;
+	border-radius: 10px;
+}
+.contact p{
+	color: white;
+	position: absolute;
+	margin-left: 30px;
+	font-size: 15px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 7px;
+	border-radius: 15px;
+	border-top-right-radius: 0px;
+}
+.contact input{
+	font: 25px;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	margin-right: 60px;
+	background: rgba(0, 0, 0, 0.7);
+	border: aqua;
+	outline: aqua;
+	border-bottom: 2px solid aqua;
+	border-left: 2px solid aqua;
+	border-top: 2px solid aqua;
+	border-right: 2px solid aqua;
+	width: 35%;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.contact button{
+	margin-right: 120px;
+	font: 20px;
+	padding: 5px;
+	color: white;
+	background-image: url(bgadmin.png);
+	border-radius: 10px;
+	transition: 0.5s step-start;
+}
+.contact button:hover{
+	margin-right: 120px;
+	font: 23px;
+	padding: 5px;
+	color: white;
+	background-image: url(bgadmin.png);
+	background-size: contain;
+	border-radius: 10px;
+	transition: 3s ease-out;
+}
+#sendmsg{
+	height: 120px;
+	text-align: top;
+}
 
 </style>
+<!-- Linking External Links (eg: OverLays, Bootstrap, Google Fonts) -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+<!-- Body Starts Here -->
+
 <body background="backg.png" style="background-repeat: no-repeat;">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -309,6 +463,7 @@
 		<ul class="nav m-auto">
 			<li class="nav-item"><a href="#homepage" class="nav-link">Home</a></li>
 			<li class="nav-item"><a href="#connect" class="nav-link">Connect with us</a></li>
+			<li class="nav-item"><a href="#contactME" class="nav-link">Contact Us</a></li>
 			<li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
 			<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
 		</ul>
@@ -332,10 +487,13 @@
 
 <div class="intro">
 	<center>
-			<label> >> What We Do Here?</label>
-			<p> This web is created mostly for new coders who wants to improve their knowledge and skills.
+		<br>
+			<label> >> RebuildIt : A effort for helping coders :)</label>
+			<img src="programming.png">
+			<br><br>
+			<p> We created this web mostly for new coders who wants to improve their knowledge and skills.
 <br>
-				Get A lot of works with HTML,CSS & JavaScript with Source Code on RebuildIt!
+				Get a lot of works by HTML,CSS & JavaScript with Source Code on RebuildIt!
 			</p>
 
 			<font color="white"> >> If you are one of them, you can sign up with us and get chance to improve your skills. << 
@@ -354,19 +512,23 @@
 
 </p>
 
-<span>
-			--> You can get any type of help in this website. You can get pluggins of IDE Softwares. You can get even well-designed IDE's from here for free! Just sign up and Join with us!
-		</font>
-	</span>
-</div>
 
+		<div class="spandiv">
+		<span>
+					--> You can get any type of help in this website. You can get everything you needed here! Starting from pluggins of IDE Softwares, Crack Versions, ReadyMade Codes with SourceCode & all. You can get even well-designed IDE's from here for free! Just sign up and Join with us for free!
+				</font>
+			</span>
+			<br>
+			<br>
+		</div>
+</div>
 
 		
 		</center>
 		</div>
-<br><br>
+<br>
 <center>
-			<div class="homebutton">
+			<div class="homebutton" style="background-color: #00194b; padding-top: 20px;">
 		<a href="signup.html" id="home">
 				<button> Sign Up Now </button>
 		</a>
@@ -376,8 +538,37 @@
 
 <div class="colorborder"></div>
 
+<div class="contact" id="contactME">
+
+<h3 id="top"> Contact With Us!</h3>
+<br><br>
+<p> Here you can report us or ask any question here to us. <br>We will try our best to replay it as soon as possible <br></p>
+<br><br><br>
+<p>Just put your name and email address so that we can<br> reply you your answer to you as soon as possible!</p>
+<label> Your UserName </label>
 <br>
-<center>
+<br>
+<input type="text" name="username">
+<br>
+<br>
+<label> Your Email Address</label>
+<br>
+<br>
+<input type="email" name="eMail">
+<br>
+<br>
+<label> Type Your Message </label>
+<br>
+<br>
+<input type="message" name="msgbody" id="sendmsg">
+<br>
+<br>
+<button type="submit" name="subMe"> Send Message</button>
+<br>
+<br>
+</div>
+
+<div class="colorborder"></div>
 
 	<form class="bg">
 	
@@ -390,20 +581,27 @@
 	  
 	</div>
 	</a>
-	<p></p>
+<p>
+
+</p>
 	<div class="secondbutton" onclick="discordButton">
 	  <button onclick="secBtn()"><img src="dc.png"><br>Join our Discord</button> 
 	   </div>
-	
+	   <br>
+	   <br>
+	   <p style="color: white; background-color: black; padding: 3px; font-size: 12px;">All the web designs were made by Xtend Ettisaf, in the purpose of helping programming beginners.<br> On development project, @xtend2022</p>
+
 	 </a>
-	
 	
 	</div>
 	</form>
-	</center>
+
 	
+	
+
+	<!--JavaScript Functions -->
 <script type="text/javascript">
-	
+
 	function fstBtn() {
  		open("https://www.facebook.com/webxtendarena/")
 	}
@@ -412,8 +610,12 @@
 	}
 </script>
 
+<script>
+	AOS.init();
+  </script>
 
 
+<!--Script Links-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
