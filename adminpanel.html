@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ettisaf : Admin Panel</title>
+</head>
+
+<style>
+
+*{
+    margin: 0px;
+    top: 0px;
+    font-family: "AudioWide", sans-serif;
+}
+.panel h1{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 5px;
+    animation: heading 2s alternate infinite;
+    
+}
+
+.panel label{
+    font-size: 30px;
+    color: white;
+}
+.panel input{
+    width: 300px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid deeppink;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+.panel input:hover{
+    width: 300px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid aquamarine;
+}
+.panel p{
+    color: white;
+    font-size: 13px;
+    margin-right: 200px;
+}
+                    .panel span{
+                        background-color: rgba(0, 0, 0, 0.7);
+                        color: white;
+                        font-size: 20px;
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+    .panel form{
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        width: 800px;
+        border-radius: 10px;
+       margin-top: 20px;
+
+    }
+    .panel button{
+        padding: 15px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: rgb(89, 211, 211);
+ }
+
+ .panel button:hover{
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background-color: rgb(157, 241, 241);
+ }
+ @keyframes heading {
+    25%{
+        transform: rotate3d(180, 0, 0, 360deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-3deg);
+    }
+ }
+
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> 
+
+<body background="bg.png" style="background-repeat: no-repeat; height: 100%; background-size: cover;">
+    <div class="panel">
+
+        <center>
+        <form onsubmit="return myAdminPage()">
+    <h1> ADMIN LOGIN PAGE</h1>
+<br>
+<br>
+    <label>Enter Admin Name</label>
+    <br>
+    <input type="text" id="name" required>
+    <br>
+    <br>
+    <label>Enter Admin Password</label>
+    <br>
+    <input type="password" id="pass" required>
+    <br>
+    <br>
+    <label>Enter Admin Password Again</label>
+    <br>
+    <input type="password" id="repass" required>
+    <br>
+    <br>
+    <button type="submit" id="subMe"> Login </button>
+    <br><br>
+<p> Form Was Maded By Xtend Ettisaf. (FB Page : Xtend Arena, YT : Redidex Gaming)</p>
+<br><br>
+<span id="warn">[LoginAlertHere]</span>
+
+<br><br>
+<div class="myAdminPage()">
+    <label id="balerid" style="font-size: 15px;"></label>
+    <button id="balerbutton"><a href="https://discord.gg/ZRK7fVhjE9"> Discord Button </a></button>
+
+</div>
+</form>
+</center>
+</div>
+
+
+
+<script>
+    function myAdminPage(){
+        // Don't Forget to do this one. And yes, you should put value here
+        var name = document.getElementById('name').value;
+        var pass = document.getElementById('pass').value;
+        var repass = document.getElementById('repass'),value;
+        var valid = "INeedTheSourceCodeBrother";
+        var notvalid = " FuckOffBish, You're not allowed to Login :|"
+        var style = document.getElementById('balerid');
+        var msges = "Thanks For Visiting My Trial Web! You've entered the correct password! It's just made me glad to see you here. But I don't wanna get you with nothing, I've code source for you. Need source code? Join Our Discord link below :-"
+
+        if (pass == valid) {
+            document.getElementById('warn').innerHTML = "Noice Brother, You're logged in as " + name;
+            document.getElementById('balerid').innerHTML = msges
+            return false;
+            
+
+        } else {
+            document.getElementById('warn').innerHTML = name + notvalid;
+            document.getElementById('balerid').innerHTML = ":)"
+            return false;
+           
+        }
+        
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
