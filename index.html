@@ -455,6 +455,73 @@
 	border-radius: 15px;
 	border-top-right-radius: 0px;
 }
+.about{
+	background-image: url(aboutbg.jpg);
+	background-size: cover;
+	width: 100%;
+	text-align: left;
+}
+.about label{
+	font-size: 20px;
+	color: black;
+	margin-top: 20px;
+	margin-left: 40px;
+	background-color: rgba(231, 245, 250, 0.274);
+	padding: 10px;
+	border-radius: 5px;
+	border-top-right-radius: 0px;
+
+}
+.about img{
+	position: absolute;
+	right: 50px;
+	animation: about 1s infinite;
+	transition: ease-in-out;
+	animation-play-state: inherit;
+}
+
+@keyframes about {
+	0%{
+		border: 5px solid red;
+	}
+	25%{
+		border-left: 5px solid red;
+		border-right: 5px solid green;
+		border-top: 5px solid aqua;
+		border-bottom: 5px solid mediumblue;
+		border-radius: 10px;
+	}
+	50%{
+		border-top: 5px solid red;
+		border-bottom: 5px solid green;
+		border-right: 5px solid aqua;
+		border-left: 5px solid mediumblue;
+		border-radius: 10px;
+	}
+	75%{
+		border-right: 5px solid red;
+		border-left: 5px solid green;
+		border-bottom: 5px solid aqua;
+		border-top: 5px solid mediumblue;
+		border-radius: 10px;
+	}
+	100%{
+		border-bottom: 5px solid red;
+		border-top: 5px solid green;
+		border-left: 5px solid aqua;
+		border-right: 5px solid mediumblue;
+		border-radius: 10px;
+	}
+}
+#joinus{
+	margin-top: 180px;
+	position: absolute;
+	right: 60px;
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+	background-color: rgba(231, 245, 250, 0.212);
+	
+}
 </style>
 <!-- Linking External Links (eg: OverLays, Bootstrap, Google Fonts) -->
 
@@ -553,8 +620,18 @@
 
 <div class="colorborder"></div>
 
-<div class="contact" id="contactME">
+<div class="about">
+	<br><br>
+	<h3 style="color: rgba(5, 0, 0, 0.708); margin-left: 40%;"> Why rebuildit? </h3>
+	<img src="prog.jpg">
+	<p id="joinus"> Join with us now!</p>
+	<label>RebuildIt is a website for <br>beginner coders with a <br>lot of works with source code <br>for free. <br>Yes, you're always welcome <br>here for free! <br>Just sign-up and join with us</label>
+<br>
+	<label>Sign Up and Get Started!</label>
+	<br><br>
+		</div>
 
+<div class="contact" id="contactME">
 	
 <h3 id="top"> Contact With Us!</h3>
 <br><br>
@@ -614,8 +691,6 @@
 	
 	</div>
 	</form>
-
-	
 	
 
 	<!--JavaScript Functions -->
