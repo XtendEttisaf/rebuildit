@@ -190,15 +190,13 @@
 
 <br>
 <br>
-<div class="ads">
-		<font> @ all the webpages are created by ettisaf under xtend</font>
-</div>
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript">
 	  var form = document.getElementById('sheetdb-form');
 	  var a = document.getElementById("pass");
 		var b = document.getElementById("repass");
-  form.addEventListener("submit", e => {
+  	form.addEventListener("submit", e => {
     e.preventDefault();
     fetch(form.action, {
         method : "POST",
@@ -207,14 +205,13 @@
         response => response.json()
     ).then((html) => {
       swal("Registration Done!", "Your Registration has been registered", "success");
-    });
+	});
   });
-  	
-  function moveTo(){
-			open("login.html")
+
+  	function moveTo(){
+		open("login.html")
 		}
-
+	
 </script>
-
 </body>
 </html>
