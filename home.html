@@ -31,23 +31,40 @@
     padding: 20px;
     border-radius: 15px;
 }
-.codes{
-    display: table-row;
-    top: 20px;
-    left: 20px;
-    margin: 20px;
+.code{
+    justify-content: space-between;
+    margin-left: 30px;
 }
-.adminpanel label{
-    color: black;
-    margin-left: 20px;
-    background-color: white;
-    padding: 15px;
+.code button{
+    font-size: 20px;
+    height: 250px;
+    width: 200px;
+    border-radius: 20px ;
+    margin-right: 20px;
+    transition: 1s;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+.code button:hover{
+    text-shadow: 0 0 100px rgb(9, 252, 81), 0 0 5px rgb(255, 2, 2);
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 50px;
+    font-size: 21px;
+    border: #05d9ff;
+    outline: invert;
+    cursor: pointer;
     
- 
-    
+}
+.code button img{
+    height: 80px;
+    border: none;
+    outline: none;
 }
 
-
+    
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> 
 <body background="download.jpg">
@@ -72,12 +89,13 @@
 </div>
 
 <div class="code">
+   
+<a href="adminpanel.html"> <button id="admin"> <img src="admin.png"> <br> Admin Panel Login </button> </a>
 
+<a href="register.html"><button id="regis"> <img src="regist.png"> <br> Registration Web Forum </button></a>
 
-<div class="adminpanel">
-<a href=""></a>
-    <img src="">
-<label> Admin Panel Login </label>
+<a href="loginpro.html"><button id="regis"> <img src="registration.png"> <br> Login Web Forum </button></a>
+
 <br>
 
 

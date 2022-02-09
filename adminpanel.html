@@ -17,7 +17,7 @@
 .panel h1{
     color: white;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 60px;
     letter-spacing: 5px;
     animation: heading 2s alternate infinite;
     
@@ -98,9 +98,9 @@
 
 <body background="bgadmin.png" style="background-repeat: no-repeat; height: 100%; background-size: cover;">
     <div class="panel">
-
         <center>
         <form onsubmit="return myAdminPage()">
+            <button onclick="help()">? Show Help ?</button>
     <h1> ADMIN LOGIN PAGE</h1>
 <br>
 <br>
@@ -134,9 +134,17 @@
 </center>
 </div>
 
-
+<div class="slink">
+    <center>
+    <a href=""><button> Source Code </button></a>
+</center>
+</div>
 
 <script>
+    function help() {
+        alert("Try Login Using Password 'INeedTheSourceCodeBrother', and Try using login with a random password! and look at to the message down below ")
+    }
+
     function myAdminPage(){
         // Don't Forget to do this one. And yes, you should put value here
         var name = document.getElementById('name').value;
@@ -145,7 +153,7 @@
         var valid = "INeedTheSourceCodeBrother";
         var notvalid = " FuckOffBish, You're not allowed to Login :|"
         var style = document.getElementById('balerid');
-        var msges = "Thanks For Visiting My Trial Web! You've entered the correct password! It's just made me glad to see you here. But I don't wanna get you with nothing, I've code source for you. Need source code? Join Our Discord link below :-"
+        var msges = "Thanks For Visiting My Trial Web! You've entered the correct password! It's just made me glad to see you here. But I don't wanna get you with nothing, I've code source for you. Need source code? You will get on the homepage! Tutorial video link on our facebook page :-"
 
         if (pass == valid) {
             document.getElementById('warn').innerHTML = "Noice Brother, You're logged in as " + name;

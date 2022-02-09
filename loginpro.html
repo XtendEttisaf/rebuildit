@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style media="screen">
+  body{
+     margin: 0;
+    padding: 0;
+    font-family: 'AudioWide', sans-serif;
+    background-image: url(download.jpg);
+    background-size: cover;
+
+  }
+  .box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .box h2{
+    margin: 0 0 30px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    margin-bottom:4px ;
+    border-bottom: 5px solid red;
+    text-align: center;
+    width: 30%;
+    transition: ease-out 1s;
+    cursor: pointer;
+  }
+
+   .box h2:hover{
+    margin: 0 0 30px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    margin-bottom:4px ;
+    border-bottom: 5px solid yellow;
+    width: 100%;
+
+  }
+  .box .input-box{
+    position: relative;
+  }
+  .box .input-box input{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid aqua;
+    border-radius: 5px;
+  }
+  .box .input-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+  }
+  .box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #227be3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  .box input[type="submit"]:hover{
+    background-color: #3067b9;
+  }
+
+  .box button{
+    padding: 7px;
+    border-radius: 10px;
+    transition: ease-out 0.09s;
+    color: black;
+    font-family: "Audiowide", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color:aqua;
+    box-shadow: rgb(3, 196, 255);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .box button:hover{
+    padding: 7px;
+    box-shadow: rgba(255,255,0, 1.0);
+    background: rgb(255, 0, 212);
+    direction: row;
+    outline: none;
+
+  }
+  .navbar ul{
+    text-align: center;
+    width: 400px;
+    cursor: pointer;
+  }
+    .navbar li{
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    outline: none;
+    border: none;
+    z-index: 1;
+    transition: 1s ease-in;
+  }
+    .navbar li:hover{
+    background: linear-gradient(90deg, aqua, red, deeppink, yellow);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 1s ease-in-out;
+    animation: hoving 0.5s linear infinite;
+    filter: blur(0.5px);
+    z-index: -1;
+  }
+
+  @keyframes hoving {
+    0%{
+      background-position: 200%;
+    }
+
+  }
+    .box .input-box label{
+    text-align: center;
+    font-size: 17px;
+    margin-left: 70px;
+    color: white;
+    border-bottom: 3px solid deeppink;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+   .navibar ul{
+    display: flex;
+   }
+   .navibar img:hover{
+    border: 2px solid aqua;
+    height: 100px;
+    width: 100px;
+    animation: rot 2s 1;
+    
+   }
+   @keyframes rot {
+     0%{
+      transform: rotate(0deg);
+      transition: 1s ease-in;
+     }
+     100%{
+       transform: rotate3d(360, 360, 360, 360deg);
+     }
+   }
+
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> 
+  <title>Login Page</title>
+</head>
+<body>
+        <div class="navibar">
+        <nav class="navbar">
+   <ul class="upline">
+    <a href="index.html">
+    <img src="logo.png" style="height: 80px; width: 80px; border-radius: 100px; margin-left: 20px;">
+  </a>
+
+</ul>
+
+</nav>
+</div>
+    <form>
+  <div>
+
+  <div class="box">
+    <center>
+    <h2>Login</h2></center>
+    <form>
+       <center>
+<br><br>
+  </center> 
+  <br>
+      <div class="input-box">
+        <label>Your UserName </label>
+        <br><br><br>
+        <input type="text" name="username" autocomplete="off" required placeholder="UserName">
+      </div>
+
+      <div class="input-box">
+        <label>Your Email Address</label>
+        <br><br><br>
+        <input type="email" name="email" autocomplete="off" required placeholder="Email Address">
+      </div>
+
+      <div class="input-box" align="left">
+        <label>Your Password </label>
+        <br><br><br>
+        </center>
+        <input type="password" name="password" autocomplete="off" required placeholder="Password">
+        
+        
+        <center>
+          <button formaction="home.html">Login</button></center>
+          <p style="color: white; font-size: 12px;"> @ Login Form was maded by Xtend Ettisaf under behalf of Xtend Arena</p>
+        </div>
+
+      </form>
+      
+    </div>
+        
+</body>
+</html>
