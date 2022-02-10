@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Let's Rebuild The Career</title>
@@ -304,36 +305,32 @@
 
 }
 .colorborder{
-	background-image: url(colorborder.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: rgba(0, 0, 0, 0.7);
-	height: 50px;
+	box-shadow: 0px 0px 20px white;
 	animation: cborder 1s alternate infinite;
 }
 @keyframes cborder {
 	
 	0%{
-		border: 2px solid red;
+		border: 15px solid red;
 	}
 	25%{
-		border: 4px solid aqua;
+		border: 15px solid aqua;
 	}
 	50%{
-		border: 6px solid deeppink;
+		border: 15px solid deeppink;
 	}
 	75%{
-		border: 3px solid green;
+		border: 15px solid green;
 	}
 	100%{
-		border: 7px solid blueviolet;
+		border: 15px solid blueviolet;
 	}
 	
 }
 
 .colorborder:hover{
 	background-color: rgba(44, 39, 39, 0.7);
-	height: 50px;
+	height: 20px;
 }
 .navigation nav{
 	padding: 1px;
@@ -554,7 +551,7 @@
 </div>
 
 <center>
-<div class="exp" id="homepage">
+<div class="exp" id="homepage" data-aos="fade-down">
 	<ul>
 		<h3>Let's Rebuild the Experience</h3>
 		<div class="html"><li> HTML </li></div>
@@ -595,7 +592,7 @@
 </p>
 
 
-		<div class="spandiv">
+		<div class="spandiv" data-aos="fade">
 		<span>
 					--> You can get any type of help in this website. You can get everything you needed here! Starting from pluggins of IDE Softwares, Crack Versions, ReadyMade Codes with SourceCode & all. You can get even well-designed IDE's from here for free! Just sign up and Join with us for free!
 				</font>
@@ -620,7 +617,7 @@
 
 <div class="colorborder"></div>
 
-<div class="about">
+<div class="about" data-aos="fade-left">
 	<br><br>
 	<h3 style="color: rgba(5, 0, 0, 0.708); margin-left: 40%;"> Why rebuildit? </h3>
 	<img src="prog.jpg">
@@ -631,7 +628,9 @@
 	<br><br>
 		</div>
 
-<div class="contact" id="contactME">
+		<div class="colorborder"></div>
+
+<div class="contact" id="contactME" data-aos="fade-right">
 	
 <h3 id="top"> Contact With Us!</h3>
 <br><br>
@@ -666,7 +665,7 @@
 
 	<form class="bg">
 	
-	<div class="connect" id="connect">
+	<div class="connect" id="connect" data-aos="zoom-out-up">
 	<br><br>
 	<label> Connect With Us! </label>
 	<br>
@@ -685,13 +684,12 @@
 	   </div>
 	   <br>
 	   <br>
-	   <p style="color: white; background-color: black; padding: 3px; font-size: 12px;">All the web designs were made by Xtend Ettisaf, in the purpose of helping programming beginners.<br> On development project, @xtend2022</p>
-
 	 </a>
-	
 	</div>
 	</form>
-	
+	<div class="watermark">
+		<p style="color: white; background-color: black; padding: 3px; font-size: 12px;">    @ All the web designs were made by Xtend Ettisaf, in the purpose of helping programming beginners.<br> On development project, @xtend2022</p>
+	</div>
 
 	<!--JavaScript Functions -->
 <script type="text/javascript">
@@ -717,5 +715,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init({
+
+		duration: 800.
+	});
+		
+  </script>
 </body>
 </html>
