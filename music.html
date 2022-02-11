@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtend Musics : Music is GooseBumps</title>
+    
+</head>
+
+<style>
+    *{
+        margin: 0;
+        top: 0;
+    }
+    html{
+        font-size: 62.5%;
+    }
+    @media(max-width: 1200px) {
+        html{
+            font-size: 62.5%;
+        }    
+    }
+            @media(max-width: 842px) {
+        html{
+            font-size: 55%;
+        }    
+    }
+    @media(max-width: 749px) {
+        html{
+            font-size: 50%;
+        }    
+    }
+    @media(max-width: 682px) {
+        html{
+            font-size: 45%;
+        }    
+    }
+    @media(max-width: 610px) {
+        html{
+            font-size: 40%;
+        }    
+    }
+    @media(max-width: 543px) {
+        html{
+            font-size: 35%;
+        }    
+    }
+
+    @media(max-width: 476px) {
+        html{
+            font-size: 30%;
+        }    
+
+    }
+    @media(max-width: 414px) {
+        html{
+            font-size: 30%;
+        }    
+
+    }
+
+    @media(max-width: 393px) {
+        html{
+            font-size: 28%;
+        }    
+
+    }
+    @media(max-width: 360px) {
+        html{
+            font-size: 24%;
+        }    
+
+    }
+
+    @media (max-width: 250px) {
+        html{
+            font-size: 20%;
+        }
+            
+    }
+    body{
+        font-family: 'AudioWide', sans-serif;
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-decoration: none;
+    }
+    .nav ul{
+        text-align: right;
+        justify-content: space-between 1rem;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 2rem;
+        height: 8rem;
+    }
+    .nav li{
+        margin: 0 0.5rem;
+        font-size: 2.5rem;
+        text-decoration: none;
+        letter-spacing: 0.5rem;
+        display: inline-flex;
+        align-items:flex-start;
+        color: white;
+        display: inline-block;
+        justify-content: space-between ;
+        transition: 1s;
+
+    }
+    .nav li:hover{
+        margin: 0 0.5rem;
+        font-size: 2.5rem;
+        text-decoration: none;
+        letter-spacing: 0.5rem;
+        display: inline-flex;
+        align-items:flex-start;
+        color: aqua;
+        display: inline-block;
+        justify-content: space-between;
+        text-shadow: 0 0 1rem rgb(255, 5, 5);
+    
+    }
+    .nav img{
+        position: center;
+        height: 6rem;
+        border-radius: 80rem;
+        right: 30rem;
+        animation: logo 2s alternate infinite;
+    }
+    @keyframes logo {
+        0%{
+            transform: rotate(0deg);
+            border: 0.3rem solid aqua;
+        }
+        20%{
+            transform: rotate(0deg);
+            border: 0.3rem solid rgb(255, 0, 191);
+
+        }
+        40%{
+            transform: rotate(90deg);
+            border: 0.3rem solid rgb(20, 255, 90);
+        }
+        60%{
+            transform: rotate(-40deg);
+            border: 0.3rem solid rgb(66, 249, 255);
+
+        }
+        80%{
+            transform: rotate(0deg);
+            border: 0.3rem solid rgb(255, 0, 0);
+
+        }
+        100%{
+            transform: rotate(0deg);
+            border: 0.3rem solid rgb(0, 47, 255);
+        }
+    
+
+    }
+        .intro label{
+            font-size: 3.5rem;
+            margin-left: 2rem;
+            margin-top: 5rem;
+            color: black;
+            background-image: url(bg.jpg);
+            padding: 2rem;
+            border-radius: 5rem;
+            box-shadow: 0 0 1rem black;
+        }
+        
+        .intro p{
+            margin-left: 20rem;
+            font-size: 2rem;
+            text-align: center;
+            background-color: rgba(255, 238, 5, 0.6);
+            padding: 1rem;
+            width: 60rem;
+            border-radius: 5rem;
+            animation: music 2s alternate infinite;
+        }
+            @keyframes music {
+                0%{
+                    color: white;
+                    text-shadow: 0 0 1rem rgb(0, 255, 255);
+                }
+                50%{
+                    text-shadow: 0 0 1rem rgb(0, 255, 13);
+                }
+                100%{
+                    color: dodgerblue;
+                    text-shadow: 0 0 1rem rgb(255, 0, 0);
+                }
+                
+            }
+
+.play form{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 40rem;
+    width: 70rem;
+    border-radius: 2rem;
+}
+
+.play label{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 1rem rgb(248, 39, 39);
+}
+.play img{
+    height: 10rem;
+    
+
+}
+#myIcon{
+    cursor: pointer;
+}
+#badal{
+    height: 20rem;
+    width: 22rem;
+    animation: badal 3s alternate infinite;
+
+}
+    @keyframes badal {
+        0%{
+            border: 0.4rem solid aqua;
+        }
+        50%{
+            border: 0.4rem solid deeppink;
+
+        }
+        100%{
+            border: 0.4rem solid rgb(84, 255, 5);
+
+
+        }
+    }
+.watermark p{
+    margin-left: 1.4rem;
+    color: white ;
+    font-size: 1.4rem;
+    background-color: black;
+}
+.hide label{
+    display: none;
+    font-size: 1.5rem;
+    animation: hide 4s alternate infinite;
+}
+    @keyframes hide {
+        0%{
+            text-shadow: 0 0 1rem rgb(248, 39, 39);
+        }
+        25%{
+            text-shadow: 0 0 1rem rgb(21, 255, 0);
+        }
+        50%{
+            text-shadow: 0 0 1rem rgb(179, 255, 0);
+        }
+        75%{
+            text-shadow: 0 0 1rem rgb(0, 250, 237);
+        }
+        100%{
+            text-shadow: 0 0 1rem rgb(134, 5, 255);
+
+        }
+        
+    }
+
+
+</style>
+
+
+<body>
+    
+    <div class="nav">
+
+        <ul style="text-decoration: none;">
+            <a href="index.html"><img src="logo.png"></a>
+            <a href="#home"><li> HOME</li></a>
+            <a href="#home"><li> ABOUT</li></a>
+            <a href="#home"><li> REGISTER</li></a>
+            <a href="#home"><li> LOGIN</li></a>
+
+        </ul>
+
+    </div>
+<br><br>
+<br>
+    <div class="intro">
+        <label> Xtend Musics, Get Trending Musics Here!</label>
+<br><br><br><br>
+        <p> Music is our depression remover <3 </p>
+    </div>
+<br><br><br>
+
+    <div class="play">
+        <center>
+        <form>
+<br><br>
+        <label> Kabhi jo Badal Barse [Lofi] </label>
+        <br><br>
+        <img src="badal.jpg" id="badal">
+        <br><br>
+        <div class="hide" data-aos="fade-in">
+            <label id="playing">Now Playing... [Kabhi Jo Badal Barse Lofi] </label>
+        </div>
+        <img src="play.png" id="myIcon" onclick="musicLogo()">
+<br><br>
+
+</form>
+</center>
+    </div>
+<br><br>
+<div class="watermark">
+
+    <p>@ All The Elements were maded by Xtend Ettisaf under behalf Xtend Arena</p>
+
+</div>
+
+    <audio id="musicMain">
+        <source src="mp3.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+           var music = document.getElementById("musicMain");
+           var icon = document.getElementById("musicLogo");
+           var img = document.getElementById("myIcon")
+           var pas = document.getElementById("pauseIt")
+           var line = document.getElementById("playing")
+
+        function musicLogo() {
+            
+            if (music.paused) {
+                music.play();
+                img.src="pause.png";
+                line.style.display = "block";
+
+            } else {
+                music.pause();
+                img.src="play.png";
+                line.style.display = "none";
+            }
+        }
+    
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000.
+        });
+            
+      </script>
+</body>
+</html>
