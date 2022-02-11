@@ -20,43 +20,51 @@
     @media(max-width: 1200px) {
         html{
             font-size: 62.5%;
+            height: 100%;
         }    
     }
             @media(max-width: 842px) {
         html{
             font-size: 55%;
+            height: 100%;
         }    
     }
     @media(max-width: 749px) {
         html{
             font-size: 50%;
+            height: 100%;
         }    
     }
     @media(max-width: 682px) {
         html{
             font-size: 45%;
+            height: 100%;
         }    
     }
     @media(max-width: 610px) {
         html{
             font-size: 40%;
+            height: 100%;
         }    
     }
     @media(max-width: 543px) {
         html{
             font-size: 35%;
+            height: 100%;
         }    
     }
 
     @media(max-width: 476px) {
         html{
             font-size: 30%;
+            height: 100%;
         }    
 
     }
     @media(max-width: 414px) {
         html{
             font-size: 30%;
+            height: 100%;
         }    
 
     }
@@ -64,12 +72,14 @@
     @media(max-width: 393px) {
         html{
             font-size: 28%;
+            height: 100%;
         }    
 
     }
     @media(max-width: 360px) {
         html{
             font-size: 24%;
+            height: 100%;
         }    
 
     }
@@ -77,6 +87,7 @@
     @media (max-width: 250px) {
         html{
             font-size: 20%;
+            height: 100%;
         }
             
     }
@@ -275,9 +286,9 @@
     <div class="nav">
 
         <ul style="text-decoration: none;">
-            <a href="index.html"><img src="logo.png"></a>
-            <a href="#home"><li> HOME</li></a>
-            <a href="#home"><li> ABOUT</li></a>
+            <a href="index.html"><img src="musiclogo.png"></a>
+            <a href="#play"><li> PLAY</li></a>
+            <a onclick="help()"><li> SHOWHELP</li></a>
             <a href="#home"><li> REGISTER</li></a>
             <a href="#home"><li> LOGIN</li></a>
 
@@ -286,7 +297,7 @@
     </div>
 <br><br>
 <br>
-    <div class="intro">
+    <div class="intro" id="play">
         <label> Xtend Musics, Get Trending Musics Here!</label>
 <br><br><br><br>
         <p> Music is our depression remover <3 </p>
@@ -301,7 +312,7 @@
         <br><br>
         <img src="badal.jpg" id="badal">
         <br><br>
-        <div class="hide" data-aos="fade-in">
+        <div data-aos="fade-down" class="hide">
             <label id="playing">Now Playing... [Kabhi Jo Badal Barse Lofi] </label>
         </div>
         <img src="play.png" id="myIcon" onclick="musicLogo()">
@@ -343,10 +354,18 @@
         }
     
     </script>
+
+<script>
+    function help() {
+        alert("Click The Play Button to Play The Song. And to Pause it, Click the Button Again. This site is fully mobile friendly! ")
+    }
+    </script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 1000.
+    
+            duration: 2000.
         });
             
       </script>
